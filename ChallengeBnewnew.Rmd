@@ -1,7 +1,7 @@
 ---
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 # challenge-b-rprog-m1-eco
 
@@ -10,6 +10,11 @@ title: "ChallengeB"
 author: "Tiphaine Gouraud & Nina Rulié"
 output: html_document
 ---
+Github links:
+https://github.com/TiphaineGOU
+https://github.com/Ninarulie
+---
+
 TASK 1B: Prediction House prices in Ames, Iowa
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -286,9 +291,9 @@ We merged the two table into one : adding info about companies identified by
 ```{r Histo of the size of the companies that nominated a CIL, include = TRUE, warning=FALSE }
 summary(Merge$TEFEN)
 MergeFactor <- as.factor(Merge$TEFEN)
-#You an see a cute pink histogram of the size of the companies that nominated a CIL (/10).
 
 ggplot(Merge) + geom_histogram(aes(TEFEN), stat="count",fill="pink") + ylab("Number of companies") + xlab("Number of employees / 10")
 
 ```
-
+You an see a cute pink histogram of the size of the companies that nominated a CIL (/10).
+We notice that middle size companies that are the most nominating CIL.
